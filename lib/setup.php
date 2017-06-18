@@ -86,6 +86,19 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
+    is_page('homepage'),
+    is_page('about-us'),
+    is_page('get-in-touch'),
+    is_archive('blog'),
+    is_page('shop'),
+    is_page('carrito'),
+    is_page('finalizar-compra'),
+    //is_archive('post-type-archive-colecciones'),
+    is_page('wishlist'),
+    is_page('mi-cuenta'),
+    is_home(), //Para el blog
+    is_single(), //Para el single post del blog
+    is_woocommerce()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

@@ -1,0 +1,57 @@
+/*-------------- Get in touch --------------*/
+
+.page-template-template-get-in-touch{
+	
+	height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.page-template-template-get-in-touch a{
+	color: #ffffff;
+}
+
+.contact_mailto{
+	position: relative;
+	color: #ffffff;
+}
+
+.contact_sm{
+	width: 35px;
+	height: 35px;
+	border-radius: 25px;
+	border: 3px solid #ffffff;
+	padding: 3px 8px;
+	float: left;
+}
+
+.contact_input{
+	position: relative;
+	border:1px solid #ffffff !important;
+	background: transparent !important;
+	color: #ffffff !important;
+	border-radius: inherit!important;
+	height: 50px;
+    padding: 7px;
+    width: 100%;
+}
+.contact_input::placeholder {
+  color:#ffffff !important;
+}
+.contact_input_btn{
+	padding: 8px 10px !important;
+	background-color: #afd3db !important;
+	color: #ffffff !important;
+	border: none!important;
+	border-radius: inherit!important;
+	float: right!important;
+	width: 135px !important;
+	font-weight: bold!important;
+}
