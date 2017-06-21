@@ -1,0 +1,94 @@
+/*------------------------- Store / content-product.php / contenido del loop ------------------*/
+
+.store_info_container{
+	background-color: #016f5f;
+	color: #ffffff;
+	position: relative;
+	text-transform: uppercase;
+	padding: 8px;
+	
+	margin-top: 10px;
+}
+
+.woocommerce span.onsale{
+	top: 3.6em;
+    left: -1.1em;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -ms-transform-origin: 0% 0%; /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+	background-color: transparent;
+	border-radius: 0;
+    width: 100px;
+    height: 0px;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid #016f5f;
+}
+
+.product-template-default span.onsale {
+	top: 6.0em;
+    left: -1.0em;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -ms-transform-origin: 0% 0%; /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+	background-color: transparent;
+	border-radius: 0;
+    width: 100px;
+    height: 0px;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid #016f5f;
+}
+
+.store_container_image span.onsale{
+    top: 3.5em;
+    left: -1em;
+}
+
+.product_imagen span.onsale{
+    top: 14.9em;
+    left: -1em;
+}
+
+
+
+.store_info_container h2{
+	margin: 0;
+}
+
+.store_title{
+	font-style: 16px;
+}
+
+.store_info{
+	font-size: 12px;
+	color: #000000;
+}
+
+.excerpt p{
+   pointer-events: none !important;
+   cursor: default !important;
+   text-decoration: none !important;
+   color: #000000;
+   font-size: 13px;
+   font-weight: 700;
+    margin-bottom: 2px;
+} 
+
+.store_precio{
+	color: #000000 !important;
+	font-size: 13px;
+}
+
+.store_precio .price{
+	color: #000000 !important;
+	font-size: 13px;
+}
+
+

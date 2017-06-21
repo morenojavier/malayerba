@@ -6,6 +6,7 @@
 // endbower
 
 @import "common/global";
+@import "common/helpers";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -20,3 +21,5 @@
 @import "pages/getintouch";
 @import "pages/homepage";
 @import "pages/aboutus";
+@import "pages/store";
+@import "pages/product";

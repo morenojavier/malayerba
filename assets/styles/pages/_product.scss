@@ -1,0 +1,65 @@
+//Remover el redondeado de la talla y redefinir tamñaño
+.tawcvs-swatches .swatch{
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.single_variation{
+    margin-bottom: 20px !important;
+}
+.woocommerce-variation-price .price{
+    border-bottom: 3px solid #b0b0b0;
+}
+
+//Ocultar los disponibles:
+.woocommerce-variation-availability{
+    display: none;
+}
+
+.woocommerce div.product form.cart .button{
+    background-color: #174b48;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    height: 50px;
+}
+
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover{
+    background-color: #1f9992;
+}
+
+.woocommerce .quantity .qty{
+    padding: 13px 10px;
+    width: 118px;
+    padding-right: 0;
+}
+
+.malayerba_size_chart_modal{
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+}
+
+.malayerba_size_chart_modal:hover{
+    color: #1f9992;
+    text-decoration: none;
+
+}
+
+.variations .label{
+    color: #000000;
+    font-size: 16px;
+}
+
+.woocommerce div.product form.cart .variations{
+    width: inherit;
+}
+
+

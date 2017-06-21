@@ -33,21 +33,23 @@
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 1.2rem;
-	color: #ffffff;
+	color: #b0b0b0;
 }
 
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover {
 	// color: $brand-white;
+	color: #C9C9C9;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-	// background-color: lighten($brand-smoke, 5%);
-	// color: $brand-white;
 	background-color: transparent !important;
 	border-bottom: 1px solid #ffffff;
+	color: #C9C9C9;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 }
 
 .menu-principal-container{
