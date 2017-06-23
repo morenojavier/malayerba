@@ -1,0 +1,35 @@
+/*Estilos del Collection
+
+1.- Estilos del contenedor del loop de post (archive-collection.php)
+2.- Loop de posts (content-collection.php)
+3.- Post (content-single.php) 
+
+*/
+
+.lookbook_element{
+min-height: 490px;
+}
+
+.lookbook_title{
+	background-color: #016f5f;
+	color: #ffffff;
+	font-size: 22px;
+	text-transform: uppercase;
+	padding: 11px;
+}
+.lookbook_btn a{
+	border: 2px solid #b0b0b0;
+    color: #b0b0b0;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.lookbook_btn a:hover{
+	border: 2px solid #000000;
+    color: #000000;
+    text-decoration: none;
+}

@@ -63,3 +63,74 @@
 	color: #ffffff;
 }
 
+.nav_sm{
+    position: absolute;
+    float: right;
+    right: 10px;
+    top: 10px;
+}
+
+.nav_sm li a{
+	color: #777777;
+}
+.nav_sm li a:hover{
+	color: #555555;
+}
+
+@media (max-width: 1145px) {
+	.nav_sm{
+	    right: 10px;
+	}
+}
+@media (max-width: 900px) {
+	.nav_sm{
+	    right: 10px;
+	}
+}
+@media (max-width: 840px) {
+	.malayerba_myaccount{
+	    display: none !important;
+	}
+}
+
+.logo_mobile{
+	display: none !important;
+}
+
+.logo_mobile img{
+	height: 30px;
+}
+
+.malayerba_myaccount{
+	font-size: 20px;
+}
+
+.nav_sm sup{
+	color: #555555;
+	text-align: center;
+	font-size: 12px;
+	margin-left: -5px;
+}
+
+.nav_sm sup a{
+	position: relative;
+	color:#777777;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.nav_sm{
+	    right: inherit;
+		top: 10px;
+	}
+	.logo_mobile{
+		display: inline-block !important;
+	}
+	.malayerba_myaccount{
+	    display: inline-block !important;
+	}
+	.navbar-collapse{
+		background-color: #f2f2f2;
+	}
+}
+

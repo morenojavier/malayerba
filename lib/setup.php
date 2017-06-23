@@ -92,11 +92,11 @@ function display_sidebar() {
     is_page('get-in-touch'),
     is_archive('blog'),
     is_page('shop'),
-    is_page('carrito'),
-    is_page('finalizar-compra'),
-    //is_archive('post-type-archive-colecciones'),
+    is_page('cart'),
+    is_page('checkout'),
+    is_archive('post-type-archive-collection'),
     is_page('wishlist'),
-    is_page('mi-cuenta'),
+    is_page('my-account'),
     is_home(), //Para el blog
     is_single(), //Para el single post del blog
     is_woocommerce()

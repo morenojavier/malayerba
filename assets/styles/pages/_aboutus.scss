@@ -15,4 +15,11 @@
 
 .aboutus_text{
 	text-align: justify;
+	height: 400px;
+}
+
+@media (max-width: 480px) {
+	.malayerba_img_aboutus{
+	    width: 300px !important;
+	}
 }

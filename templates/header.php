@@ -16,5 +16,12 @@
       endif;
       ?>
     </nav>
+    <ul class="list-inline nav_sm">
+      <li class="logo_mobile">
+        
+        <a href="http://malayerba.dev"><img src="http://malayerba.dev/wp-content/uploads/2017/06/malayerba_logo_blanco_mobile.png" style="width: 180px; height: 18px;"  /></a>
+      </li>
+      <li class="malayerba_myaccount"><a href="<?php get_site_url(); ?>/my-account"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+    </ul>
   </div>
 </header>

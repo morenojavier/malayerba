@@ -1,10 +1,10 @@
 <div class="container">
 	<div class="row">
 
-		<div class="col-md-6 aboutus_content">
-			<div class="aboutus_img"><img src="<?php the_post_thumbnail_url(); ?> " alt="" class="img-responsive"></div>
+		<div class="col-md-6 aboutus_content center">
+			<div class="aboutus_img center"><img src="<?php the_post_thumbnail_url(); ?> " alt="" class="malayerba_img_aboutus"></div>
 		</div>
-		<div class="col-md-6 aboutus_text">
+		<div class="col-md-6 aboutus_text flex flex-column items-center justify-center">
 			<?php the_content(); ?>
 		</div>
 

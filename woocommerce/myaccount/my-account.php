@@ -1,45 +1,49 @@
-
-<?php
-/**
- * My Account page
- *
- * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/my-account.php.
- *
- * HOWEVER, on occasion WooCommerce will need to update template files and you
- * (the theme developer) will need to copy the new files to your theme to
- * maintain compatibility. We try to do this as little as possible, but it does
- * happen. When this occurs the version of the template file will be bumped and
- * the readme will list any important changes.
- *
- * @see     https://docs.woocommerce.com/document/template-structure/
- * @author  WooThemes
- * @package WooCommerce/Templates
- * @version 2.6.0
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
-wc_print_notices();
-
-/**
- * My Account navigation.
- * @since 2.6.0
- */
-?>
-
-<div class="col-md-3 tammle_woo_myaccount_list"><?php do_action( 'woocommerce_account_navigation' ); ?></div>
-
-<div class="col-md-9 tammle_woo_myaccount_content">
-	<?php layerslider(2) ?>
-	<?php
+<div class="container">
+	<div class="row">
+		<?php
 		/**
-		 * My Account content.
+		 * My Account page
+		 *
+		 * This template can be overridden by copying it to yourtheme/woocommerce/myaccount/my-account.php.
+		 *
+		 * HOWEVER, on occasion WooCommerce will need to update template files and you
+		 * (the theme developer) will need to copy the new files to your theme to
+		 * maintain compatibility. We try to do this as little as possible, but it does
+		 * happen. When this occurs the version of the template file will be bumped and
+		 * the readme will list any important changes.
+		 *
+		 * @see     https://docs.woocommerce.com/document/template-structure/
+		 * @author  WooThemes
+		 * @package WooCommerce/Templates
+		 * @version 2.6.0
+		 */
+
+		if ( ! defined( 'ABSPATH' ) ) {
+			exit;
+		}
+
+		wc_print_notices();
+
+		/**
+		 * My Account navigation.
 		 * @since 2.6.0
 		 */
-		do_action( 'woocommerce_account_content' );
-	?>
+		?>
+
+		<div class="col-md-4 tammle_woo_myaccount_list"><?php do_action( 'woocommerce_account_navigation' ); ?></div>
+
+		<div class="col-md-8 tammle_woo_myaccount_content">
+			<?php layerslider(2) ?>
+			<?php
+				/**
+				 * My Account content.
+				 * @since 2.6.0
+				 */
+				do_action( 'woocommerce_account_content' );
+			?>
+		</div>
+
+	</div>
 </div>
 
 
