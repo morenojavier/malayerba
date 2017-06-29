@@ -1,12 +1,13 @@
 /*------------------------- Store / content-product.php / contenido del loop ------------------*/
 
+.store_producto{
+    margin-bottom: 20px;
+}
 .store_info_container{
-	background-color: #016f5f;
-	color: #ffffff;
+	color: #232122;
 	position: relative;
 	text-transform: uppercase;
-	padding: 8px;
-	
+	padding: 8px 0;
 	margin-top: 10px;
 }
 
@@ -25,7 +26,7 @@
     height: 0px;
     border-right: 30px solid transparent;
     border-left: 30px solid transparent;
-    border-bottom: 30px solid #016f5f;
+    border-bottom: 30px solid #232122;
 }
 
 .product-template-default span.onsale {
@@ -43,7 +44,7 @@
     height: 0px;
     border-right: 30px solid transparent;
     border-left: 30px solid transparent;
-    border-bottom: 30px solid #016f5f;
+    border-bottom: 30px solid #232122;
 }
 
 .store_container_image span.onsale{
@@ -62,8 +63,8 @@
 	margin: 0;
 }
 
-.store_title{
-	font-style: 16px;
+.store_title .woocommerce-loop-product__title{
+	font-size: 12px;
 }
 
 .store_info{
@@ -91,4 +92,8 @@
 	font-size: 13px;
 }
 
+
+.mtree{
+    padding-left: 0;
+}
 

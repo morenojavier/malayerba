@@ -1,0 +1,42 @@
+.page-template-template-get-in-touch footer, 
+.page-template-template-homepage footer{
+	display: none;
+}
+
+footer{
+	position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #ffffff;
+    color: #232122;
+    border-top: 40px solid #232122;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.footer_title{
+	font-size: 18px;
+	font-weight: 400;
+	border-bottom: solid 1px #232122;
+	margin-bottom: 15px;
+	padding-bottom: 7px;
+}
+
+.footer_list ul li a{
+	color: #232122;
+	text-decoration: none;
+	&:hover{
+		color: #000000;
+	}
+}
+
+.footer_legal a{
+	color: #232122;
+	text-decoration: none;
+	&:hover{
+		color: #000000;
+	}
+}

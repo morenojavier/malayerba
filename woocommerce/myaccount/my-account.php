@@ -33,7 +33,6 @@
 		<div class="col-md-4 tammle_woo_myaccount_list"><?php do_action( 'woocommerce_account_navigation' ); ?></div>
 
 		<div class="col-md-8 tammle_woo_myaccount_content">
-			<?php layerslider(2) ?>
 			<?php
 				/**
 				 * My Account content.

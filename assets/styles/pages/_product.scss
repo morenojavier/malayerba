@@ -6,10 +6,13 @@
     height: 50px !important;
 }
 
+.product h1{
+    font-size: 23px;
+}
+
 .woocommerce div.product p.price, .woocommerce div.product span.price{
-    font-size: 25px;
-    font-weight: bold;
-    color: #000000;
+    font-size: 12px;
+    color: #232122;
 }
 
 .single_variation{
@@ -25,14 +28,14 @@
 }
 
 .woocommerce div.product form.cart .button{
-    background-color: #174b48;
+    background-color: #232122;
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
     height: 50px;
 }
 
 .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover{
-    background-color: #1f9992;
+    background-color: #656364;
 }
 
 .woocommerce .quantity .qty{
@@ -42,15 +45,27 @@
 }
 
 .malayerba_size_chart_modal{
-    color: #000000;
+    color: #232122;
     position: relative;
     text-decoration: none;
 }
 
 .malayerba_size_chart_modal:hover{
-    color: #1f9992;
+    color: #000000;
     text-decoration: none;
 
+}
+.malayerba_size_chart_modal:focus{
+    outline: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.summary p.price{
+    font-size: 18px !important;
+}
+.product_contenido h2{
+    font-size: 23px;
 }
 
 .variations .label{
@@ -62,4 +77,22 @@
     width: inherit;
 }
 
+.woocommerce #respond input#submit.alt,
+ .woocommerce a.button.alt, 
+ .woocommerce button.button.alt, 
+ .woocommerce input.button.alt{
+    background-color:#232122;
+    border-radius: 0;
+}
+
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover{
+    background-color:#000000;
+}
+
+#coupon_code{
+    width: 120px;
+}
 

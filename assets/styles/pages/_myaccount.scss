@@ -1,0 +1,186 @@
+.mi-cuenta {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0d1b4+0,f0d1b4+100 */
+	background-color: #f0d1b4; /* Old browsers */
+}
+
+.logged-in{
+	background-color: #ffffff !important;
+}
+
+#micuenta h2{
+	font-size: 28px;
+	text-transform: uppercase;
+	color:#4b4b4a;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register{
+	border:none;
+	//background-color: #eac298;
+}
+
+.woocommerce form .form-row label, .woocommerce-page form .form-row label{
+	color:#4b4b4a;
+    font-size: 14px;
+    font-weight: 100;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-family: Titillium Web,sans-serif !important;
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button{
+	color: #fff;
+	border:none;
+	border-radius: 5px;
+	padding:8px 14px;
+}
+
+.woocommerce-Button[name="login"] {
+	background-color: #eac298 !important;
+	color: #fff !important;
+	margin-right: 20px !important;
+	&:hover {
+		background-color:#fcbe7e!important;
+	}
+}
+.woocommerce-Button[name="register"] {
+	background-color: #eac298 !important;
+	color: #fff !important;
+	margin-right: 20px !important;
+	&:hover {
+		background-color:#fcbe7e!important;
+	}
+}
+
+
+#customer_login{
+
+}
+
+.woocommerce-form__label .woocommerce-form__label-for-checkbox .inline{
+	width: 100%;
+	position:relative;
+}
+
+.woocomerce-form .woocommerce-form-login .login a{
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #6a6a6a !important;
+	padding: 6px 10px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.woocomerce-form .woocommerce-form-login .login a:hover{
+	color: #515151!important;
+	background-color: #dad8da !important;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
+    background-color: #f4dfc9;
+    border: none;
+    border-radius: 9px;
+    padding: 12px;
+}
+
+#customer_login .woocommerce-LostPassword a{
+	background-color: #eac298;
+	position: relative;
+	top: 20px;
+	color: #fff;
+	border:none;
+	border-radius: 5px;
+	padding:8px 14px;
+	text-decoration: none;
+    font-weight: bold;
+}
+
+#customer_login .woocommerce-LostPassword a:hover{
+	background-color: #fcbe7e;
+}
+
+input#rememberme.woocommerce-form__input.woocommerce-form__input-checkbox{
+	
+}
+
+.woocommerce form .form-row .input-checkbox{
+	margin:inherit;
+}
+
+.wc-terms-and-conditions span{
+	margin-left: 16px;
+}
+.wc-terms-and-conditions .required{
+	margin: 0;
+}
+.wc-terms-and-conditions a{
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+.wc-terms-and-conditions a:hover{
+	color: #292929;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation{
+	width: 100%;
+}
+
+.tammle_woo_myaccount_list ul{
+	position: relative;
+	width: 100%;
+	float: left;
+	list-style-type: none;
+	padding: 0;
+}
+
+.tammle_woo_myaccount_list li{
+	border-bottom:1px solid #4b4b4a;
+	padding: 10px 0;
+}
+
+.tammle_woo_myaccount_list li a{
+	padding: 10px 0;
+	width:100%;
+	color:#4b4b4a;
+	text-decoration: none;
+	&:hover{
+		font-weight: bold;
+		color: #2E2E2E;
+
+	}
+}
+
+.tammle_woo_myaccount_content .form-row input.input-text, .form-row textarea{
+	background-color: #cecece !important;
+}
+
+
+
+.tammle_woo_myaccount_content a{
+	color: #000000;
+	border-bottom: 1px solid #4b4b4a;
+	padding: 4px;
+	text-decoration: none;
+	&:hover{
+		background-color: #4b4b4a;
+		color: #ffffff;
+	}
+}
+
+.tammle_woo_myaccount_content .woocommerce-Button{
+	background-color: #4b4b4a !important;
+	color: #ffffff !important;
+	&:hover{
+		background-color:#ebe9eb!important;
+		color:#4b4b4a!important;
+	}
+}

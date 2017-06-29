@@ -21,56 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 } ?>
 
-		<!-- <div class="row">
-			<ul class="store_categorias">
-			<li><a href="/tienda/">Todos</a>/</li><?php
-			$taxonomy     = 'product_cat';
-			$orderby      = 'name';  
-			$show_count   = 0;      // 1 for yes, 0 for no
-			$pad_counts   = 0;      // 1 for yes, 0 for no
-			$hierarchical = 1;      // 1 for yes, 0 for no  
-			$title        = '';  
-			$empty        = 0;
-
-			$args = array(
-			     'taxonomy'     => $taxonomy,
-			     'orderby'      => $orderby,
-			     'show_count'   => $show_count,
-			     'pad_counts'   => $pad_counts,
-			     'hierarchical' => $hierarchical,
-			     'title_li'     => $title,
-			     'hide_empty'   => $empty
-			);
-			$all_categories = get_categories( $args );
-			foreach ($all_categories as $cat) {
-			if($cat->category_parent == 0) {
-			    $category_id = $cat->term_id;       
-			    echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>/</li>';
-
-			    $args2 = array(
-			            'taxonomy'     => $taxonomy,
-			            'child_of'     => 0,
-			            'parent'       => $category_id,
-			            'orderby'      => $orderby,
-			            'show_count'   => $show_count,
-			            'pad_counts'   => $pad_counts,
-			            'hierarchical' => $hierarchical,
-			            'title_li'     => $title,
-			            'hide_empty'   => $empty
-			    );
-			    $sub_cats = get_categories( $args2 );
-			    if($sub_cats) {
-			        foreach($sub_cats as $sub_category) {
-			            echo  $sub_category->name ;
-			        }   
-			    }
-			}       
-			}
-			?><li><a href="<?php get_site_url(); ?>/colecciones">Colecciones</a></li>
-			
-		</div> -->
-		
-
 		<?
 		/**
 		 * woocommerce_before_main_content hook.
@@ -103,62 +53,70 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		    </header>
 		</div>
+		
 		<div class="row">
-		<?php if ( have_posts() ) : ?>
 
-			<?php
-				/**
-				 * woocommerce_before_shop_loop hook.
-				 *
-				 * @hooked wc_print_notices - 10
-				 * @hooked woocommerce_result_count - 20
-				 * @hooked woocommerce_catalog_ordering - 30
-				 */
-				//do_action( 'woocommerce_before_shop_loop' );
-			?>
+			<div class="col-md-3"><?php dynamic_sidebar('sidebar-primary'); ?>
 			
-			<?php woocommerce_product_loop_start(); ?>
 
-				<?php woocommerce_product_subcategories(); ?>
+			</div>
+			<div class="col-md-9">
+			<?php if ( have_posts() ) : ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php
+					/**
+					 * woocommerce_before_shop_loop hook.
+					 *
+					 * @hooked wc_print_notices - 10
+					 * @hooked woocommerce_result_count - 20
+					 * @hooked woocommerce_catalog_ordering - 30
+					 */
+					//do_action( 'woocommerce_before_shop_loop' );
+				?>
+				
+				<?php woocommerce_product_loop_start(); ?>
 
-					<?php
-						/**
-						 * woocommerce_shop_loop hook.
-						 *
-						 * @hooked WC_Structured_Data::generate_product_data() - 10
-						 */
-						do_action( 'woocommerce_shop_loop' );
-					?>
+					<?php woocommerce_product_subcategories(); ?>
 
-					<?php wc_get_template_part( 'content', 'product' ); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php endwhile; // end of the loop. ?>
+						<?php
+							/**
+							 * woocommerce_shop_loop hook.
+							 *
+							 * @hooked WC_Structured_Data::generate_product_data() - 10
+							 */
+							do_action( 'woocommerce_shop_loop' );
+						?>
 
-			<?php woocommerce_product_loop_end(); ?>
+						<?php wc_get_template_part( 'content', 'product' ); ?>
 
-			<?php
-				/**
-				 * woocommerce_after_shop_loop hook.
-				 *
-				 * @hooked woocommerce_pagination - 10
-				 */
-				do_action( 'woocommerce_after_shop_loop' );
-			?>
-			
-		<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
+					<?php endwhile; // end of the loop. ?>
 
-			<?php
-				/**
-				 * woocommerce_no_products_found hook.
-				 *
-				 * @hooked wc_no_products_found - 10
-				 */
-				do_action( 'woocommerce_no_products_found' );
-			?>
+				<?php woocommerce_product_loop_end(); ?>
 
-		<?php endif; ?>
+				<?php
+					/**
+					 * woocommerce_after_shop_loop hook.
+					 *
+					 * @hooked woocommerce_pagination - 10
+					 */
+					do_action( 'woocommerce_after_shop_loop' );
+				?>
+				
+			<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
+
+				<?php
+					/**
+					 * woocommerce_no_products_found hook.
+					 *
+					 * @hooked wc_no_products_found - 10
+					 */
+					do_action( 'woocommerce_no_products_found' );
+				?>
+
+			<?php endif; ?>
+			</div>
 		</div>
 	<?php
 		/**
