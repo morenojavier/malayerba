@@ -54,12 +54,12 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 					<?php /*Btn añadir al carrito*/ do_action( 'woocommerce_after_shop_loop_item' );?>
 				</div> -->
 			</div>
-			<div class="store_info">
+			<!-- <div class="store_info">
 				<div class="excerpt"><p><?php the_excerpt(); ?></p></div>
 				<div class="store_precio">
 					<?php /*Precio*/ do_action( 'woocommerce_after_shop_loop_item_title' ); ?> 
 				</div>
-			</div>
+			</div> -->
 		</div>
 			
 	</div>
