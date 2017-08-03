@@ -66,11 +66,13 @@ function new_loop_shop_per_page( $cols ) {
   return $cols;
 }
 
-// Customización del single product
-//Remover el título
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
-//Remover excerpt
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
-//Remover tags
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+// // Customización del single product
+// //Remover el título
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+// //Remover excerpt
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+// //Remover tags
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+
 

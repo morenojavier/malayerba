@@ -47,78 +47,110 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>	
 		</div>
 	</div>
-	<div class="row" style="background-color:<?php the_field('background-color');?>; padding:30px; ">
-
-		<div class="product_imagen">
-		<?php
-			/**
-			 * woocommerce_before_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_show_product_sale_flash - 10
-			 * @hooked woocommerce_show_product_images - 20
-			 */
-			do_action( 'woocommerce_before_single_product_summary' );
-		?>
-		</div>
-		<div class="summary entry-summary">
-
-					
-
+	<div class="row">
+		<div class="col-md-6">
+			<div class="product_imagen">
 			<?php
 				/**
-				 * woocommerce_single_product_summary hook.
+				 * woocommerce_before_single_product_summary hook.
 				 *
-				 * @hooked woocommerce_template_single_title - 5
-				 * @hooked woocommerce_template_single_rating - 10
-				 * @hooked woocommerce_template_single_price - 20
-				 * @hooked woocommerce_template_single_excerpt - 10
-				 * @hooked woocommerce_template_single_add_to_cart - 30
-				 * @hooked woocommerce_template_single_meta - 40
-				 * @hooked woocommerce_template_single_sharing - 50
-				 * @hooked WC_Structured_Data::generate_product_data() - 60
+				 * @hooked woocommerce_show_product_sale_flash - 10
+				 * @hooked woocommerce_show_product_images - 20
 				 */
-				
-
-				do_action( 'woocommerce_single_product_summary' );
-
-
+				//do_action( 'woocommerce_before_single_product_summary' );
 			?>
-			<div class="product_contenido">
-				<?php $size_chart_modal = get_field( "size_chart" );
-				if( $size_chart_modal ) { ?>
+
+				<div class="owl-carousel owl-theme ">
+				<?php
+
+				// check if the repeater field has rows of data
+				if( have_rows('slider_product') ):
+
+				 	// loop through the rows of data
+				    while ( have_rows('slider_product') ) : the_row();
+						// vars
+						
+						$img_slider = get_sub_field('imagen');
+						
+			
+						?>
+				        <div class="hero_bg flex items-center justify-center center">
+				        	<img src="<?php echo $img_slider; ?>" class="img-responsive">
+						</div>
+						<?php
+				    endwhile;
+				else :
+				    // no rows found
+				endif;
+				?>
+
+				<?php wp_reset_postdata(); ?>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="entry-summary">
 				
-				<a href="#" class="malayerba_size_chart_modal" data-toggle="modal" data-target="#miModal">
-				  <h3>VIEW SIZE CHART</h3>
-				</a>
-				<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-								<h4 class="modal-title" id="myModalLabel">SIZE CHART</h4>
-							</div>
-							<div class="modal-body">
-								<img src="<?php echo $size_chart_modal; ?>" class="img-responsive" alt="">
+				
+				<?php
+					/**
+					 * woocommerce_single_product_summary hook.
+					 *
+					 * @hooked woocommerce_template_single_title - 5
+					 * @hooked woocommerce_template_single_rating - 10
+					 * @hooked woocommerce_template_single_price - 10
+					 * @hooked woocommerce_template_single_excerpt - 20
+					 * @hooked woocommerce_template_single_add_to_cart - 30
+					 * @hooked woocommerce_template_single_meta - 40
+					 * @hooked woocommerce_template_single_sharing - 50
+					 * @hooked WC_Structured_Data::generate_product_data() - 60
+					 */
+					do_action( 'woocommerce_single_product_summary' );
+					
+					wp_reset_postdata();
+				?>
+				
+						
+
+				
+				<div class="product_contenido">
+					<?php $size_chart_modal = get_field( "size_chart" );
+					if( $size_chart_modal ) { ?>
+					
+					<a href="#" class="malayerba_size_chart_modal" data-toggle="modal" data-target="#miModal">
+					  <h3>VIEW SIZE CHART</h3>
+					</a>
+					<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">SIZE CHART</h4>
+								</div>
+								<div class="modal-body">
+									<img src="<?php echo $size_chart_modal; ?>" class="img-responsive" alt="">
+								</div>
 							</div>
 						</div>
 					</div>
+							
+					<?php } ?>		
+
+					<?php
+					$thecontent = get_the_content();
+					if(!empty($thecontent)) { ?>
+
+					    <h2>INFO</h2>
+					    <?php echo get_the_content(); ?>
+
+					<?php } ?>
+					<?php wp_reset_postdata(); ?>
 				</div>
-						
-				<?php } ?>		
 
-				<?php
-				$thecontent = get_the_content();
-				if(!empty($thecontent)) { ?>
-
-				    <h2>INFO</h2>
-				    <?php echo get_the_content(); ?>
-
-				<?php } ?>
-			</div>
-
-		</div><!-- .summary -->
+			</div><!-- .summary -->
+		</div>
 	</div>
 	
 	<div class="row">

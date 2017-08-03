@@ -30,6 +30,24 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          item: 1,
+          dots:false,
+          responsive:{
+            0:{
+              items:1
+            },
+            600:{
+              items:1
+            },
+            1000:{
+              items:1
+            }
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
@@ -39,6 +57,32 @@
     'about_us': {
       init: function() {
         // JavaScript to be fired on the about us page
+      }
+    },
+    // About us page, note the change from about-us to about_us.
+    'single_product': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          item: 1,
+          dots:false,
+          responsive:{
+            0:{
+              items:1
+            },
+            600:{
+              items:1
+            },
+            1000:{
+              items:1
+            }
+          }
+        });
+        
+
       }
     }
   };
