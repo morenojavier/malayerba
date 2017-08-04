@@ -48,6 +48,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 			<div class="store_info_container">
 				<div class="store_title">
 					<?php /*Título*/ do_action( 'woocommerce_shop_loop_item_title' ); ?>
+					<?php /*Precio*/ do_action( 'woocommerce_after_shop_loop_item_title' ); ?> 
 				</div>
 				<!-- <div class="store_btn_anadir_carrito">
 					<a href="<?php the_permalink(); ?>">Ver más</a>
