@@ -20,7 +20,7 @@
       init: function() {
         // JavaScript to be fired on all pages
         //cambiar url a http://malayerba.mx/
-        $('li.menu-item-236').empty().append('<a href="http://malayerba.mx"><img src="http://malayerba.mx/wp-content/uploads/2017/06/malayerba_logo_blanco_res70_2_black.png" /></a>');
+        $('li.menu-item-236').empty().append('<a href="https://malayerba.mx"><img src="https://malayerba.mx/wp-content/uploads/2017/06/malayerba_logo_blanco_res70_2_black.png" /></a>');
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

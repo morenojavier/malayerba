@@ -1,11 +1,6 @@
 
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-12 center pd-bottom-50">
-			<h1>Lookbook</h1>
-		</div>
-	</div><!-- .row end -->
 	
 	<div class="row center pd-bottom-90">
 	<?php

@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.0.0
+ * @version 3.1.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -42,3 +42,4 @@ wc_print_notices();
 		</a>
 	</p>
 <?php endif; ?>
+

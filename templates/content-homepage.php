@@ -1,6 +1,6 @@
 <style>
 	.page-template-template-homepage{
-		background-image: url("<?php the_post_thumbnail_url(); ?>");
+		background-image: url("<?php the_field('background-image'); ?>");
 	}
 </style>
 

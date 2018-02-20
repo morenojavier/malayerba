@@ -18,7 +18,7 @@
 
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register{
 	border:none;
-	//background-color: #eac298;
+	//background-color: #cecece;
 }
 
 .woocommerce form .form-row label, .woocommerce-page form .form-row label{
@@ -42,19 +42,19 @@
 }
 
 .woocommerce-Button[name="login"] {
-	background-color: #eac298 !important;
+	background-color: #cecece !important;
 	color: #fff !important;
 	margin-right: 20px !important;
 	&:hover {
-		background-color:#fcbe7e!important;
+		background-color:#777777!important;
 	}
 }
 .woocommerce-Button[name="register"] {
-	background-color: #eac298 !important;
+	background-color: #cecece !important;
 	color: #fff !important;
 	margin-right: 20px !important;
 	&:hover {
-		background-color:#fcbe7e!important;
+		background-color:#777777!important;
 	}
 }
 
@@ -85,14 +85,14 @@
 }
 
 .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
-    background-color: #f4dfc9;
+    background-color: #dad8da;
     border: none;
     border-radius: 9px;
     padding: 12px;
 }
 
 #customer_login .woocommerce-LostPassword a{
-	background-color: #eac298;
+	background-color: #dad8da;
 	position: relative;
 	top: 20px;
 	color: #fff;
@@ -104,7 +104,7 @@
 }
 
 #customer_login .woocommerce-LostPassword a:hover{
-	background-color: #fcbe7e;
+	background-color: #dad8da;
 }
 
 input#rememberme.woocommerce-form__input.woocommerce-form__input-checkbox{

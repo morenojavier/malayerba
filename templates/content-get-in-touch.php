@@ -1,6 +1,6 @@
 <style>
 .page-template-template-get-in-touch{
-	background-image: url("http://malayerba.mx/wp-content/uploads/2017/06/contact_bg.jpg");
+	background-image: url("<?php the_field('background-image'); ?>");
 }
 </style>
 <div class="container-fluid">

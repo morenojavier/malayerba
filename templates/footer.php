@@ -9,6 +9,7 @@
 						<li><a href="<?php get_site_url(); ?>/devoluciones/">Devoluciones</a></li>
 						<li><a href="<?php get_site_url(); ?>/pagos/">Pagos</a></li>
 						<li><a href="<?php get_site_url(); ?>/envios/">Envíos</a></li>
+						<li><a href="<?php get_site_url(); ?>/find-us/">Find us</a></li>
 					</ul>
 				</div>
 			</div>

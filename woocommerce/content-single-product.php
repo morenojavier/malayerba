@@ -41,10 +41,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row">
 		<div class="col-md-12">
-			<div><h1><?php the_title(); ?></h1></div>
-			<div class="malayerba_product_subtitle">
+			<!-- <div><h1><?php //the_title(); ?></h1></div> -->
+			<!-- <div class="malayerba_product_subtitle">
 				<h3><?php the_excerpt(); ?></h>
-			</div>	
+			</div> -->	
 		</div>
 	</div>
 	<div class="row">
@@ -59,20 +59,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				 */
 				//do_action( 'woocommerce_before_single_product_summary' );
 			?>
-
 				<div class="owl-carousel owl-theme ">
 				<?php
-
-				// check if the repeater field has rows of data
 				if( have_rows('slider_product') ):
-
-				 	// loop through the rows of data
 				    while ( have_rows('slider_product') ) : the_row();
-						// vars
-						
 						$img_slider = get_sub_field('imagen');
-						
-			
 						?>
 				        <div class="hero_bg flex items-center justify-center center">
 				        	<img src="<?php echo $img_slider; ?>" class="img-responsive">
@@ -80,17 +71,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<?php
 				    endwhile;
 				else :
-				    // no rows found
 				endif;
 				?>
-
 				<?php wp_reset_postdata(); ?>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="entry-summary">
-				
 				
 				<?php
 					/**
@@ -108,17 +96,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 					do_action( 'woocommerce_single_product_summary' );
 					
 					wp_reset_postdata();
-				?>
-				
-						
 
-				
+
+				?>
+					
 				<div class="product_contenido">
 					<?php $size_chart_modal = get_field( "size_chart" );
 					if( $size_chart_modal ) { ?>
 					
 					<a href="#" class="malayerba_size_chart_modal" data-toggle="modal" data-target="#miModal">
-					  <h3>VIEW SIZE CHART</h3>
+					  <h5>VIEW SIZE CHART</h5>
 					</a>
 					<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog" role="document">
